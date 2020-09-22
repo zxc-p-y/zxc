@@ -46,15 +46,15 @@ if ask == 1:#внести новые данные о предметах
 	for x in range(14):
 		enterMarks(x)
 
-if ask == 2:#показать ситуацию по одному отдельному предмету
+elif ask == 2:#показать ситуацию по одному отдельному предмету
 	for x in range(14):
 		print(str(x+1) + ' ' + listOfObjectsToShow[x])
 	showJournal(int(input('по какому именно?'))-1)
 
-if ask == 3:#показать ситуацию по каждому предмету
+elif ask == 3:#показать ситуацию по каждому предмету
 	for x in range(14):
 		showJournal(x)
 
-if ask == 4:#Показать плановые оценки
+elif ask == 4:#Показать плановые оценки
 	for x in range(14):
 		print(listOfObjectsToShow[x] + ' ' + str(planedMarkForIObj[x]))
